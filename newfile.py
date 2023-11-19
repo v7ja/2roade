@@ -80,10 +80,10 @@ def start(message):
     mar.add(I,J)
     mar.add(K)
     mar.add(Z) 
+				ph = "https://telegra.ph/file/cfa8d23ac6a45eb51d8dd.mp4"
     if str(id) == own_id:
-    	bot.reply_to(message,text=f"- 𝖧𝖾𝖫𝖫𝗈 , {name}",parse_mode="markdown")
-    	bot.reply_to(message,text=f"""- 𝖶𝖾𝖫𝖼𝗈𝖬𝖾 𝖳𝗈 𝖴𝗌𝖤𝗋𝗌 𝖥𝖫𝗈𝗈𝖣 𝖥𝗂𝗌𝗁𝗂𝖭𝗀 𝖢𝗁𝖾𝖼𝖪𝖾𝗋 
-- 𝖣𝖾𝗏𝖾𝖫𝗈𝖯𝖾𝗋 : ErrOr""",parse_mode="markdown",reply_markup=mar)
+    	bot.send_video(message.chat.id,ph,caption=f"""*- 𝒘𝒆𝒍𝒄𝒐𝒎𝒆 {message.chat.first_name} , 
+𝒊𝒏 𝒕𝒉𝒆 𝒄𝒉𝒆𝒄𝒌𝒆𝒓 𝒖𝒔𝒆𝒓 𝒏𝒂𝒎𝒆 𝒕𝒆𝒍𝒆𝒈𝒓𝒂𝒎 𝒃𝒚 : @c_7c7 🇮🇶 , .*""",parse_mode="markdown",reply_markup=mar)
     if str(id) != own_id:
     	bot.reply_to(message,text=f"""*-ʜᴀʟᴏ ᴋɪɴɢ *""",parse_mode="markdown",reply_markup=o)
 @bot.message_handler(func=lambda m:True)
