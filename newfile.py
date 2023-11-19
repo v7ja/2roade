@@ -24,7 +24,7 @@ info = open("info.txt",'r').read();token = info.split('\n')[0];own_id = info.spl
 bot = telebot.TeleBot(token)
 SaiF = types.InlineKeyboardButton(text = "- aBooD .", url = 'https://t.me/@c_7c7')
 channel = types.InlineKeyboardButton(text = "- 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 .", url = 'https://t.me/ToGoLang')
-@bot.message_handler(commands=[('check']))
+@bot.message_handler(commands=['check'])
 async def check(message):
  await bot.reply_to(message, "جار..")
  for session in open("account.txt","r").read():
